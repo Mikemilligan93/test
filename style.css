@@ -34,7 +34,7 @@ body {
   content: '';
   position: absolute;
   height: 25vmin;
-  width: 40vmin;
+  width: 100vmin;
   background: #282c34;
   transform: translate(-45vmin, -24.5vmin);
 }
@@ -43,7 +43,7 @@ body {
   content: '';
   position: absolute;
   height: 25vmin;
-  width: 40vmin;
+  width: 100vmin;
   background: #282c34;
   transform: translate(-40vmin, 5vmin);
 }
