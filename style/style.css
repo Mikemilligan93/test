@@ -43,15 +43,15 @@ nav ul li{
 }
  nav ul li a{
   color:white;
-  text-shadow: 1px #0ff;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
  }
 
  nav ul li a:hover{
   color:aqua;
-  text-shadow: 1px #FFFFFF;
   transition: .4s;
+  text-decoration: none;
  }
 
  .content{
