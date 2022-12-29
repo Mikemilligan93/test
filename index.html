@@ -9,7 +9,7 @@
     <!---HERO-->
       <div class="hero">
         <nav>
-          <img class="logo" src="https://media3.giphy.com/media/mgG6KB1ZaN3jy/giphy.gif?cid=ecf05e477qr9ifhqmbnf7efl3n2ni7cvnq63sazrebfcs2lx&rid=giphy.gif&ct=g" width="48" height="48" frameBorder="0">
+          <img class="logo" src="style/img/rubik.png" width="48" height="48" frameBorder="0">
         <ul>
           <li><a href="#">Homepage</a></li>
           <li><a href="#">About me</a></li>
@@ -25,89 +25,7 @@
         <h1>  Bence Toth </h1>
         <h4> and I am a Business Analyst</h4>
       </div>
-        
-    <!--CHATGPT-->
-
-    <!-- This code will create a chat window with a text input and a submit button. -->
-
-<div id="chat-container">
-  <div id="chat-window">
-    <!-- The chat messages will be added here. -->
-  </div>
-  <form id="chat-form">
-    <input type="text" id="chat-input" placeholder="Type your message here...">
-    <button type="submit" id="chat-submit">Send</button>
-  </form>
-</div>
-
-<!-- This code will handle the chat functionality using JavaScript. -->
-
-<script>
-  // Get references to the chat container, form, input, and submit button
-  const chatContainer = document.getElementById('chat-container');
-  const chatForm = document.getElementById('chat-form');
-  const chatInput = document.getElementById('chat-input');
-  const chatSubmit = document.getElementById('chat-submit');
-
-  // Send a message to Assistant when the form is submitted
-  chatForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    sendMessage();
-  });
-
-  // Send a message to Assistant when the "Enter" key is pressed in the input field
-  chatInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      event.preventDefault();
-      sendMessage();
-    }
-  });
-
-  // Send a message to Assistant
-  function sendMessage() {
-    // Get the message text
-    const message = chatInput.value;
-
-    // Clear the input field
-    chatInput.value = '';
-
-    // Add the message to the chat window
-    addMessage('You', message);
-
-    // Send the message to Assistant and get the response
-    fetch('https://api.openai.com/v1/images/generations', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
-      },
-      body: JSON.stringify({
-        'model': 'text-davinci-002',
-        'prompt': message,
-        'num_images':1,
-        'size': '1024x1024',
-        'response_format': 'text'
-      })
-    }).then((response) => {
-      return response.json();
-    }).then((response) => {
-      // Add Assistant's response to the chat window
-      addMessage('Assistant', response.data[0].text);
-    });
-  }
-
-  // Add a message to the chat window
-  function addMessage(sender, message) {
-    const chatWindow = document.getElementById('chat-window');
-    const newMessage = document.createElement('div');
-    newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
-    chatWindow.appendChild(newMessage);
-    chatWindow.scrollTop = chatWindow.scrollHeight;
-  }
-</script>
-
-
-        
+                
     </body>
     
     </html>
