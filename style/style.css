@@ -1,11 +1,11 @@
 body{
-  background-color: rgb(254,249,225);
+  background-color: black;
   font-family: 'Courier New', Courier, monospace;
 }
 
 h1{
   text-align: center;
-  color:black;
+  color:white;
   font-family: monospace;
   text-transform: uppercase;
   padding: 25px;
@@ -13,7 +13,7 @@ h1{
 
 p{
   text-align: center;
-  color: rgb(177,108,55);
+  color: white;
   text-transform: uppercase;
   font-family: monospace;
   padding: 25px;
