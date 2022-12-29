@@ -41,13 +41,14 @@ nav ul li{
   padding: 10px;
 }
  nav ul li a{
-  color:chocolate;
+  color:white;
   font-weight: bold;
   text-transform: uppercase;
  }
 
  nav ul li a:hover{
-  color:brown;
+  color:aqua;
+  text-shadow: 2px;
   transition: .4s;
  }
 
