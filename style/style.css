@@ -1,12 +1,12 @@
 body{
-  background-color: black;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(120,45,199);
+  font-family: 'Lemon/Milk light', sans-serif;
 }
 
 h1{
   text-align: center;
   color:white;
-  font-family: monospace;
+  font-family: 'Lemon/Milk', sans-serif;
   text-transform: uppercase;
   padding: 25px;
 }
